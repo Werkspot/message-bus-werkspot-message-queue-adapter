@@ -1,0 +1,43 @@
+{
+    "name": "werkspot/message-bus-werkspot-message-queue-adapter",
+    "type": "library",
+    "description": "The adapter that allows for werkspot/message-queue to be used with werkspot/message-bus.",
+    "keywords": ["message-bus", "message-queue", "message", "bus", "CommandBus", "EventBus", "queue"],
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Werkspot Team",
+            "email": "technology@werkspot.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Werkspot\\MessageBus\\MessageQueue\\WerkspotMessageQueue": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Werkspot\\MessageBus\\MessageQueue\\WerkspotMessageQueue\\Test": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "require": {
+        "php": "^7.1",
+        "roave/security-advisories": "dev-master",
+        "werkspot/message-bus": "dev-master",
+        "werkspot/message-queue": "dev-master"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "mockery/mockery": "v1.0.0-alpha1",
+        "phpunit/phpunit": "^5.7"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
