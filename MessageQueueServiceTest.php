@@ -5,12 +5,12 @@ declare(strict_types=1);
 namespace Werkspot\MessageBus\Test\Unit\MessageQueue\WerkspotMessageQueue;
 
 use Mockery;
+use PHPUnit\Framework\TestCase;
 use Werkspot\MessageBus\Message\AsynchronousMessage;
 use Werkspot\MessageBus\MessageQueue\WerkspotMessageQueue\MessageQueueService;
 use Werkspot\MessageQueue\MessageQueueServiceInterface as WerkspotMessageQueueServiceInterface;
-use Werkspot\TestFramework\Unit\AbstractUnitTest;
 
-final class MessageQueueServiceTest extends AbstractUnitTest
+final class MessageQueueServiceTest extends TestCase
 {
     /**
      * @test
