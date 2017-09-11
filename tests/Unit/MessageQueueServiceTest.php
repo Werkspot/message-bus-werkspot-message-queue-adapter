@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Werkspot\MessageBus\Test\Unit\MessageQueue\WerkspotMessageQueue;
+namespace Werkspot\MessageBus\MessageQueue\WerkspotMessageQueue\Test\Unit;
 
 use Mockery;
 use PHPUnit\Framework\TestCase;
