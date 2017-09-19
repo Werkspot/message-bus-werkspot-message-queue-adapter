@@ -13,12 +13,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "Werkspot\\MessageBus\\MessageQueue\\WerkspotMessageQueue": "src/"
+            "Werkspot\\MessageBus\\MessageQueue\\WerkspotMessageQueue\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Werkspot\\MessageBus\\MessageQueue\\WerkspotMessageQueue\\Test": "tests/"
+            "Werkspot\\MessageBus\\MessageQueue\\WerkspotMessageQueue\\Test\\": "tests/"
         }
     },
     "config": {
