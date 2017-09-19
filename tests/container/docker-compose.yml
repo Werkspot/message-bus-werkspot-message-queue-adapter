@@ -1,9 +1,0 @@
-version: '3.0'
-
-services:
-  application:
-    container_name: application
-    image: "werkspot/message-bus-werkspot-message-queue-adapter:application_php_7.1"
-    working_dir: /opt/message-bus-werkspot-message-queue-adapter
-    volumes:
-      - ../../:/opt/message-bus-werkspot-message-queue-adapter
