@@ -5,8 +5,10 @@ $rootDir = __DIR__ . '/..';
 $returnVal = 0;
 
 system(
-    "docker run --volume $rootDir:/opt/message-bus -w /opt/message-bus --rm werkspot/message-bus-werkspot-message-queue-adapter:application_php_7.1 "
-    . "php -dzend_extension=xdebug.so vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover.xml",
+    'docker run --volume'
+    . " $rootDir:/opt/message-bus-werkspot-message-queue-adapter -w /opt/message-bus-werkspot-message-queue-adapter --rm"
+    . ' werkspot/message-bus-werkspot-message-queue-adapter:application_php_7.1'
+    . ' php -dzend_extension=xdebug.so vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover.xml',
     $returnVal
 );
 
